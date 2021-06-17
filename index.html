@@ -17,15 +17,24 @@
             <div class="login">
                 <img src="assert/img/instagram-logo.png" alt="logo instagram" class="logo-img">
                 <form action="">
-                    <input type="text" id="name" name="name" placeholder="Nome, telefone ou email">
+                    <div class="box-name">
+                        <legend>Nome, telefone ou email</legend>
+                        <input type="text" id="name" name="name">
+                    </div>
                     
                     <div class="senha">
-                        <input type="text" id="senha" name="senha">
-                        <div class="btn-show"><button type="button" class="btn-mostrar">Mostrar</button>
+                        <label for="">
+                            <legend>senha</legend>
+                            <input type="text" id="senha" name="senha">
+                        </label>
+                        <div class="btn-show">
+                            <button type="button" class="btn-mostrar" >Mostrar</button>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn-sub">Enviar</button>
+                    <div id="btn-sub">
+                        <button type="submit" class="btn-sub">Enviar</button>
+                    </div>
                     
                     <p>ou</p>
                     

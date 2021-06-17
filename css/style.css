@@ -14,7 +14,7 @@ main {
     width: 348px;
     height: 350px;
     padding: 10px 0;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
     border-radius: 3px;
 }
@@ -28,27 +28,59 @@ form {
     flex-direction: column;
 }
 
-form #name {
+form .box-name {
     width: 268px;
     height: 38px;
     margin: 5px 40px;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.507);
     border-radius: 5px;
+    position: relative;
+}
+
+form .box-name legend {
+    left: 10px;
+    top: 3px;
+    position: absolute;
+    opacity: 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+form .box-name input {
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 form .senha {
     display: flex;
     width: 268px;
     height: 38px;
-    margin: 5px 40px;
-    border: 1px solid #000;
+    margin: 5px 40px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
     border-radius: 3px;
 }
 
-form .senha input {
+form .senha label {
     width: 70%;
     height: 100%;
     border: none;
+    position: relative;
+}
+
+form .senha label legend {
+    left: 10px;
+    top: 3px;
+    position: absolute;
+    opacity: 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+form .senha label input {
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 form .senha .btn-show {
@@ -62,9 +94,13 @@ form .senha .btn-show {
 
 form .senha .btn-show button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    border: none;
+    font-size: 16px;
+    border: transparent;
     background-color: transparent;
-    pointer-events: painted;
+    cursor: pointer;
+}
+
+.btn-sub {
+    width: 268px;
+    height: 30px;
 }
