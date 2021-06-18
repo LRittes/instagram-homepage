@@ -172,6 +172,7 @@ form .senha .btn-show button {
     height: 60px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+    width: 100%;
 }
 
 .sing-in a {
@@ -189,4 +190,27 @@ form .senha .btn-show button {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #fff;
+    }
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .img-home {
+        display: none;
+    }
+
+    .box-login .login, .sing-in, .get-app {
+        border: none;
+    }
 }
